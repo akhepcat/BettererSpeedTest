@@ -13,16 +13,17 @@ Assuming you have your own netperf server running, test your download-only and g
 
 --
 
-Usage: sh BettererSpeedTest [-4 -6] [-qvbkUDHPtpn]
+    Usage: sh BettererSpeedTest [-4 -6] [-qvbkUDHPtpn]
+    
+    -q|--quiet
+    -v|--verbose
+    -b|--bandwidth(-only)
+    -U|--upload(-only)
+    -D|--download(-only)
+    -k|--kilobits                        default: megabits/s
+    -H|--host netperf-server             default: netperf.bufferbloat.net
+    -P|--port server-port                default: 12865
+    -t|--time duration                   default: 30
+    -p|--ping host-to-ping               default: www.google.com
+    -n|--number  simultaneous-sessions   default: 20
 
--q|--quiet
--v|--verbose
--b|--bandwidth(-only)
--U|--upload(-only)
--D|--download(-only)
--k|--kilobits                        default: megabits/s
--H|--host netperf-server             default: netperf.bufferbloat.net
--P|--port server-port                default: 12865
--t|--time duration                   default: 30
--p|--ping host-to-ping               default: www.google.com
--n|--number  simultaneous-sessions   default: 20
