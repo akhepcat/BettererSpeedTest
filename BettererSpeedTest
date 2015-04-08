@@ -20,7 +20,7 @@
 #       5 sessions chosen empirically because total didn't increase much after that number)
 
 usage() {
-        echo "Usage: sh betterspeedtest.sh [-4 -6] [-qvbkUDHPtpn]"
+        echo "Usage: sh $0 [-4 -6] [-qvbkUDHPtpn]"
         echo ""
         echo "-q|--quiet"
         echo "-v|--verbose"
