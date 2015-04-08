@@ -1,6 +1,7 @@
 # BettererSpeedTest
 
 local hacked up version of betterspeedtest.sh, originally coded by Rich Brown.
+(see: https://github.com/richb-hanover/CeroWrtScripts )
 
 This version allows for independant up/down testing, and minimal output,
 suitable for scripting and import directly into things like RRD databases.
