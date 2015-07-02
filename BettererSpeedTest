@@ -19,6 +19,22 @@
 # "n" and "number" Number of simultaneous upload or download sessions (default: 5 sessions;
 #       5 sessions chosen empirically because total didn't increase much after that number)
 
+# set an initial values for defaults
+TESTHOST="netperf.bufferbloat.net"
+TESTDUR="30"
+PINGHOST="www.google.com"
+MAXSESSIONS="20"
+TESTPROTO=-4
+PERFPORT=12865
+# default to all tests
+BWONLY=0
+DOWNLOAD=1
+UPLOAD=1
+# default to progress bars
+QUIET=0
+PROGRESS=1
+SCALE="-f m"	# default to megabits/sec
+
 usage() {
         echo "Usage: sh $0 [-4 -6] [-qvbkUDHPtpn]"
         echo ""
@@ -189,21 +205,7 @@ measure_direction() {
 
 # ------- Start of the main routine --------
 
-# set an initial values for defaults
-TESTHOST="netperf.bufferbloat.net"
-TESTDUR="30"
-PINGHOST="www.google.com"
-MAXSESSIONS="20"
-TESTPROTO=-4
-PERFPORT=12865
-# default to all tests
-BWONLY=0
-DOWNLOAD=1
-UPLOAD=1
-# default to progress bars
-QUIET=0
-PROGRESS=1
-SCALE="-f m"	# default to megabits/sec
+[[ -r ${HOME}/.bettererc ]] && . ${HOME}/.bettererc
 
 # extract options and their arguments into variables.
 while [ $# -gt 0 ] 
