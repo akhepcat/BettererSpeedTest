@@ -40,6 +40,7 @@ usage() {
         echo ""
         echo "-q|--quiet"
         echo "-v|--verbose"
+        echo "-4|-6 test only IPv4 or IPv6         default: IPv${TESTPROTO//-/}"
         echo "-b|--bandwidth(-only)"
         echo "-U|--upload(-only)"
         echo "-D|--download(-only)"
