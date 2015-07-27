@@ -206,6 +206,8 @@ measure_direction() {
 
 # ------- Start of the main routine --------
 
+[[ -r /etc/bettererc ]] && . /etc/bettererc
+[[ -r /etc/default/bettererc ]] && . /etc/default/bettererc
 [[ -r ${HOME}/.bettererc ]] && . ${HOME}/.bettererc
 
 # extract options and their arguments into variables.

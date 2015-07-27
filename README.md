@@ -11,6 +11,15 @@ Assuming you have your own netperf server running, test your download-only and g
     $ BettererSpeedTest -H mynetperf.localdomain -t 30 -n 20 -b -D -q -k | awk '{print $2}'
     15160099
 
+You can have system or per-user customized config files, which are read in the following order:
+	/etc/bettererc        
+	/etc/default/bettererc 
+	${HOME}/.bettererc
+
+
+easily extract the options list from the script:
+	$ sed -n 15,37p BettererSpeedTest > /etc/default/bettererc 
+
 
 --
 
