@@ -13,9 +13,9 @@
 # GPLv2
 
 # read the options
-# “H” and “host” DNS or IP address of the netperf server host (default: netperf.bufferbloat.net)
-# “t” and “time” Time to run the test in each direction (default: 60 seconds)
-# “p” and “ping” Host to ping for latency measurements (default: gstatic.com)
+# "H" and "host" DNS or IP address of the netperf server host (default: netperf.bufferbloat.net)
+# "t" and "time" Time to run the test in each direction (default: 60 seconds)
+# "p" and "ping" Host to ping for latency measurements (default: gstatic.com)
 # "n" and "number" Number of simultaneous upload or download sessions (default: 5 sessions;
 #       5 sessions chosen empirically because total didn't increase much after that number)
 
