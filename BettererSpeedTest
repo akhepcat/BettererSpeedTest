@@ -35,6 +35,9 @@ QUIET=0
 PROGRESS=1
 SCALE="-f m"	# default to megabits/sec
 
+# head -37 BettererSpeedTest | tail -16 > /etc/default/bettererc
+#
+####################################################
 usage() {
         echo "Usage: sh $0 [-4 -6] [-qvbkUDHPtpn]"
         echo ""
